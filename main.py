@@ -18,15 +18,15 @@ wait = WebDriverWait(driver, 30)
 print("Welcome!!")
 
 
-username = "Your User Name" # get it from https://app.turbomedia.io/login
-password = "Your passoword"
+userName = "Your User Name" # get it from https://app.turbomedia.io/login
+passWord = "Your passoword"
 
 driver.get("https://app.turbomedia.io/login")
 username = driver.find_element(By.XPATH, "//input[@placeholder='Your Instagram Username']")
-username.send_keys(username)
+username.send_keys(userName)
 
 password = driver.find_element(By.XPATH, "//input[@placeholder='Password']")
-password.send_keys(password)
+password.send_keys(passWord)
 password.send_keys(Keys.ENTER)
 
 try:
